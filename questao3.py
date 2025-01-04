@@ -40,4 +40,7 @@ def diferenca(imagem1: str, imagem2: str) -> np.array:
 cv2.imshow("uniao1e2", uniao("imagem1.bmp", "imagem2.bmp"))
 cv2.imshow("intersecao1e3", intersecao("imagem1.bmp", "imagem3.bmp"))
 cv2.imshow("diferenca2e3", diferenca("imagem2.bmp", "imagem3.bmp"))
-            
+
+cv2.imwrite("uniao1e2.bmp", uniao("imagem1.bmp", "imagem2.bmp"))
+cv2.imwrite("intersecao1e3.bmp", intersecao("imagem1.bmp", "imagem3.bmp"))
+cv2.imwrite("diferenca2e3.bmp", diferenca("imagem2.bmp", "imagem3.bmp"))

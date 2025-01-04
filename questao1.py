@@ -46,3 +46,12 @@ cv2.imshow("prewitt horizontal", resultado_prewitt_horizontal)
 cv2.imshow("prewitt vertical", resultado_prewitt_vertical)
 cv2.imshow("sobel horizontal", resultado_sobel_horizontal)
 cv2.imshow("sobel vertical", resultado_sobel_vertical)
+
+cv2.imwrite("laplaciano.bmp", resultado_laplaciano)
+cv2.imwrite("unsharp.bmp", imagem - resultado_blur)
+cv2.imwrite("highboost.bmp", resultado_high_boost)
+cv2.imwrite("prewitthorizontal.bmp", resultado_prewitt_horizontal)
+cv2.imwrite("prewittvertical.bmp", resultado_prewitt_vertical)
+cv2.imwrite("sobelhorizontal.bmp", resultado_sobel_horizontal)
+cv2.imwrite("sobelvertical.bmp", resultado_sobel_vertical)
+
